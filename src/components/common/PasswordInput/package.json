@@ -1,0 +1,6 @@
+{
+    "name": "PasswordInput",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./PasswordInput.js"
+  }
