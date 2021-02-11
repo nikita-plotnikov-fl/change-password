@@ -1,11 +1,32 @@
 export const styles = (theme) => ({
   card: {
-    padding: "15px",
+    [theme.breakpoints.up("sm")]: {
+      padding: "5px",
+    },
+
+    [theme.breakpoints.up("md")]: {
+      padding: "15px",
+    },
   },
   paper: {
-    padding: "30px 0",
-    boxShadow: "0 0 50px rgba(0,0,0,0.1)",
-    borderRadius: "5px",
+    [theme.breakpoints.up("sm")]: {
+      padding: "30px 0",
+      boxShadow: "0 0 50px rgba(0,0,0,0.1)",
+      borderRadius: "5px",
+    },
+    [theme.breakpoints.down("sm")]: {
+      boxShadow: "none",
+    },
+  },
+  paper_body: {
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "center",
+    },
   },
   characters: {
     color: "#2CC468",

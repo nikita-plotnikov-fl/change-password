@@ -47,7 +47,7 @@ const ChangePassword = (props) => {
             alignItems="center"
             className={classes.paper_body}
           >
-            <Grid item xs={5} className={classes.body_item}>
+            <Grid item xs={12} md={5} className={classes.body_item}>
               <PasswordInput
                 label="New Password"
                 name="newPassword"
@@ -99,7 +99,7 @@ const ChangePassword = (props) => {
                 <ChevronRight className={classes.button_icon} />
               </LoadingButton>
             </Grid>
-            <Grid item xs={5} className={classes.validation}>
+            <Grid item xs={12} md={5} className={classes.validation}>
               <ValidationInfo />
             </Grid>
           </Grid>

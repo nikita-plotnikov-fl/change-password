@@ -11,12 +11,7 @@ const ValidationInfo = (props) => {
       <Grid container>
         <Grid item xs={6} className={classes.card}>
           <Paper className={classes.paper}>
-            <Grid
-              container
-              direction="column"
-              justify="center"
-              alignItems="center"
-            >
+            <Grid container className={classes.paper_body}>
               <Grid item className={classes.characters}>
                 8+
               </Grid>
@@ -26,12 +21,7 @@ const ValidationInfo = (props) => {
         </Grid>
         <Grid item xs={6} className={classes.card}>
           <Paper className={classes.paper}>
-            <Grid
-              container
-              direction="column"
-              justify="center"
-              alignItems="center"
-            >
+            <Grid container className={classes.paper_body}>
               <Grid item className={classes.lowercase}>
                 Aa
               </Grid>
@@ -43,12 +33,7 @@ const ValidationInfo = (props) => {
       <Grid container>
         <Grid item xs={6} className={classes.card}>
           <Paper className={classes.paper}>
-            <Grid
-              container
-              direction="column"
-              justify="center"
-              alignItems="center"
-            >
+            <Grid container className={classes.paper_body}>
               <Grid item className={classes.uppercase}>
                 AA
               </Grid>
@@ -58,12 +43,7 @@ const ValidationInfo = (props) => {
         </Grid>
         <Grid item xs={6} className={classes.card}>
           <Paper className={classes.paper}>
-            <Grid
-              container
-              direction="column"
-              justify="center"
-              alignItems="center"
-            >
+            <Grid container className={classes.paper_body}>
               <Grid item className={classes.numbers}>
                 123
               </Grid>

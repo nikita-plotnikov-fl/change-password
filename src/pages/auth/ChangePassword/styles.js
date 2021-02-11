@@ -3,9 +3,10 @@ export const styles = (theme) => ({
     height: "100%",
   },
   paper: {
-    minWidth: 1150,
-    minHeight: 600,
-    borderRadius: "6px",
+    borderRadius: "10px",
+    [theme.breakpoints.up("xl")]: {
+      minWidth: "1150px",
+    },
   },
   paper_header: {
     textAlign: "center",
@@ -13,9 +14,18 @@ export const styles = (theme) => ({
     color: "#100A36",
     paddingTop: "40px",
     fontSize: "35px",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "30px",
+      margin: "0 !important",
+      textAlign: "left",
+      padding: "15px",
+    },
   },
   body_item: {
     padding: "20px 25px 20px 35px",
+    [theme.breakpoints.down("xs")]: {
+      padding: "15px 20px",
+    },
   },
   button: {
     margin: "20px 0",
@@ -36,5 +46,14 @@ export const styles = (theme) => ({
     fontSize: "16px",
     padding: "20px 25px 20px 35px",
     marginTop: "-30px",
+    [theme.breakpoints.up("md")]: {
+      minWidth: "500px",
+    },
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "column",
+      boxShadow: "0 0 50px rgba(0,0,0,0.1)",
+      borderRadius: "5px",
+      marginTop: "15px",
+    },
   },
 });
